@@ -4,15 +4,13 @@ import java.util.List;
 public class Login_java {
     private List<TestDTO> userList;
 
-    public void Login() {
+    public Login_java() {
         userList = new ArrayList<>();
-
         // 예시 사용자 추가 (테스트용)
 //        userList.add(new TestDTO("test1", "pass1"));
         TestDTO user = new TestDTO();
         user.setUser("test1", "pass1");
         userList.add(user);
-
     }
 
     public boolean login(String username, String password) {
